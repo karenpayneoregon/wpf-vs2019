@@ -18,10 +18,17 @@ namespace Example1
     {
         public static List<Product> Products => new List<Product>()
         {
-            new Product() {Id = -1, Name = "Select"},
             new Product() {Id = 1, Name = "Orange"},
             new Product() {Id = 2, Name = "Apple"},
             new Product() {Id = 3, Name = "Grape"}
         };
+
+        public static List<Product> ProductsWithSelect()
+        {
+            var products = Products;
+            products.Insert(0, new Product() { Id = -1, Name = "Select" });
+
+            return products;
+        }
     }
 }

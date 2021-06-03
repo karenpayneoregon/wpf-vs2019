@@ -24,8 +24,10 @@ namespace Example1
         public MainWindow()
         {
             InitializeComponent();
-            ProductComboBox.ItemsSource = Operations.Products;
+
+            ProductComboBox.ItemsSource = Operations.ProductsWithSelect();
             ProductComboBox.SelectedIndex = 0;
+            
         }
 
         private void SelectButton_Click(object sender, RoutedEventArgs e)
