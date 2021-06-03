@@ -28,7 +28,7 @@
             Grid.Column="1"
             Width="78"
             Height="54"
-            Margin="24,41,18,19"
+            Margin="24,45,18,19"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Command="{Binding PlayCommand}"
